@@ -98,19 +98,14 @@ tail -f /data/hereditary-cancer/results/PATIENT001/pipeline.log
 ## Pipeline Output
 The main outputs are:
 
-Filtered VCF
-VEP annotated VCF
-CNV CSV
-QC reports
-BAM
-BAM index
-GATK recalibration files
-Pipeline logs
-
-## Pipeline Version
-Hereditary Cancer Panel Pipeline
-Version: 1.0.0
-Reference: GRCh38 / hg38
+1. Filtered VCF
+2. VEP annotated VCF
+3. CNV CSV
+4. QC reports
+5. BAM
+6. BAM index
+7. GATK recalibration files
+8. Pipeline logs
 
 ## Intended Use
 
@@ -118,3 +113,8 @@ This pipeline is intended to support the analysis of hereditary cancer panel seq
 
 ## Reproducibility
 The workflow is organized into modular steps to facilitate reproducible analysis, parameter tracking, and integration into automated NGS processing environments. Configuration files and workflow parameters can be adapted for different sequencing platforms, gene panels, reference genomes, and annotation resources.
+
+## Pipeline Version
+Hereditary Cancer Panel Pipeline
+Version: 1.0.0
+Reference: GRCh38 / hg38
