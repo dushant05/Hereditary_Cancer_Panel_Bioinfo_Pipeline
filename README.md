@@ -69,11 +69,52 @@ Reference data:
 - Mills and 1000G indel database
 - VEP databases
 
-## Configuration
+## Quick Start
+For a new server:
 
-Copy the example configuration:
+git clone YOUR_GITHUB_REPOSITORY
 
-```bash
+cd hereditary-cancer-panel
+
 cp config/config.sh.example config/config.sh
 
-# Hereditary_Cancer_Panel_Bioinfo_Pipeline
+nano config/config.sh
+
+chmod +x scripts/run.sh
+
+chmod +x scripts/hereditary_cancer.sh
+
+Run the patient:
+
+./scripts/run.sh \
+    PATIENT001 \
+    /data/fastq/PATIENT001_R1.fastq.gz \
+    /data/fastq/PATIENT001_R2.fastq.gz
+
+Monitor:
+
+tail -f /data/hereditary-cancer/results/PATIENT001/pipeline.log
+
+## Pipeline Output
+The main outputs are:
+
+Filtered VCF
+VEP annotated VCF
+CNV CSV
+QC reports
+BAM
+BAM index
+GATK recalibration files
+Pipeline logs
+
+## Pipeline Version
+Hereditary Cancer Panel Pipeline
+Version: 1.0.0
+Reference: GRCh38 / hg38
+
+## Intended Use
+
+This pipeline is intended to support the analysis of hereditary cancer panel sequencing data for research, method development, and bioinformatics workflows. Final clinical interpretation and reporting should be performed according to applicable laboratory procedures, validated protocols, and relevant clinical guidelines.
+
+## Reproducibility
+The workflow is organized into modular steps to facilitate reproducible analysis, parameter tracking, and integration into automated NGS processing environments. Configuration files and workflow parameters can be adapted for different sequencing platforms, gene panels, reference genomes, and annotation resources.
