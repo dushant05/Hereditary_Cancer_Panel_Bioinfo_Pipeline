@@ -71,6 +71,9 @@ Reference data:
 
 ## Quick Start
 For a new server:
+pwd # -- print the path for the current directory 
+cd # -- change to a directory. Here, "./" is the current directory, and "../" is the directory above. 
+mkdir # -- create a directory
 
 cd hereditary-cancer-panel
 
