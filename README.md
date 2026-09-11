@@ -72,8 +72,6 @@ Reference data:
 ## Quick Start
 For a new server:
 
-git clone YOUR_GITHUB_REPOSITORY
-
 cd hereditary-cancer-panel
 
 cp config/config.sh.example config/config.sh
