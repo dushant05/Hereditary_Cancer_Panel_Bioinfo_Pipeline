@@ -14,21 +14,37 @@ A reproducible bioinformatics pipeline for the analysis of hereditary cancer gen
 9. Generation of analysis-ready variant reports
 10. Reproducible and modular workflow suitable for research and diagnostic environments
 
-## Pipeline
+## Workflow
 
-FASTQ
-→ FASTP
-→ FastQC
-→ BWA MEM
-→ SAMtools
-→ Picard
-→ MarkDuplicates
-→ GATK BQSR
-→ GATK HaplotypeCaller
-→ SNP/INDEL filtering
-→ CNV analysis
-→ VEP annotation
-→ Final results
+Raw FASTQ
+   │
+   ▼
+Quality Control
+   │
+   ▼
+Read Trimming / Preprocessing
+   │
+   ▼
+Reference Genome Alignment
+   │
+   ▼
+BAM Processing & QC
+   │
+   ▼
+Germline Variant Calling
+   │
+   ▼
+Variant Filtering
+   │
+   ▼
+Variant Annotation
+   │
+   ▼
+Variant Prioritization
+   │
+   ▼
+Clinical / Research Report
+
 
 ## Requirements
 
