@@ -82,14 +82,14 @@ chmod +x scripts/run.sh
 
 chmod +x scripts/hereditary_cancer.sh
 
-# Run the patient:
+Run the patient:
 
 ./scripts/run.sh \
     PATIENT001 \
     /data/fastq/PATIENT001_R1.fastq.gz \
     /data/fastq/PATIENT001_R2.fastq.gz
 
-# For the coverage QC check, run:
+For the coverage QC check, run:
 
 python3 coverage_qc.py \
     --bam  \
